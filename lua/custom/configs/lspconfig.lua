@@ -7,7 +7,6 @@ local servers = { "pyright", "gopls" }
 
 
 for _, lsp in ipairs(servers) do
-  print(lsp)
   lspconfig[lsp].setup{
     on_attach = on_attach,
     capabilities = capabilities,

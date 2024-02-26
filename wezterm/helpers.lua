@@ -22,7 +22,9 @@ function module.apply_to_config(config)
 
   config.color_scheme = 'Catppuccin Mocha'
   config.font_size = 15.0
-  config.window_decorations = "NONE"
+  -- config.window_decorations = "NONE"
+  config.initial_cols = 160
+  config.initial_rows = 38
 end
 
 -- return our module table

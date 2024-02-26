@@ -40,7 +40,7 @@ local plugins = {
         "gopls",
       },
     },
-  }
+  },
 }
 
 return plugins
