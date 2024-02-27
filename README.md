@@ -1,1 +1,0 @@
-# QAlexBall Config 
