@@ -10,3 +10,4 @@ after
 **/.DS_Store
 WezTerm
 **/__pycache__/
+**/target/
