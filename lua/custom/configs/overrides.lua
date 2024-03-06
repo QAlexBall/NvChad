@@ -30,9 +30,9 @@ M.copilot = {
     },
   },
   filetypes = {
-    yaml = false,
-    markdown = false,
     help = false,
+    markdown = true,
+    yaml = true,
     gitcommit = false,
     gitrebase = false,
     hgcommit = false,

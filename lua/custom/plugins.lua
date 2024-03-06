@@ -88,7 +88,7 @@ local plugins = {
   {
     "rust-lang/rust.vim",
     ft = "rust",
-    init =function ()
+    init = function ()
       vim.g.rustfmt_autosave = 1
     end
   },
@@ -101,6 +101,24 @@ local plugins = {
     end,
     config = function(_, opts)
       require("rust-tools").setup(opts)
+    end
+  },
+  {
+    "giusgad/pets.nvim",
+    dependencies = { "MunifTanjim/nui.nvim", "giusgad/hologram.nvim" },
+    init = function ()
+      require("pets").setup({})
+    end
+  },
+  {
+    'tamton-aquib/duck.nvim',
+    config = function()
+        vim.keymap.set('n', '<leader>dd', function() require("duck").hatch() end, {})
+        vim.keymap.set('n', '<leader>dk', function() require("duck").cook() end, {})
+        vim.keymap.set('n', '<leader>da', function() require("duck").cook_all() end, {})
+    end,
+    init = function ()
+      require("duck").setup({})
     end
   }
 }
