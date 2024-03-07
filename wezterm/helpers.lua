@@ -21,7 +21,7 @@ function module.apply_to_config(config)
   private_helper()
 
   config.color_scheme = 'Catppuccin Mocha'
-  config.font_size = 15.0
+  config.font_size = 13.0
   -- config.window_decorations = "NONE"
   config.initial_cols = 120
   config.initial_rows = 32
