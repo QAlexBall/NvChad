@@ -20,8 +20,8 @@ end
 function module.apply_to_config(config)
   private_helper()
 
-  -- config.color_scheme = "Catppuccin Mocha"
-  config.font_size = 15.0
+  config.color_scheme = "Catppuccin Mocha"
+  config.font_size = 13.0
   -- config.window_decorations = "NONE"
   config.initial_cols = 120
   config.initial_rows = 32
@@ -33,9 +33,10 @@ function module.apply_to_config(config)
     hue = 1.0,
     saturation = 1.0,
   }
-  config.window_background_opacity = 0.99
+  -- config.text_background_opacity = 1
+  -- config.window_background_opacity = 0.9
   -- config.window_background_gradient = {
-  --   colors = { "#339966", "#990099" },
+  --   colors = { "#1e1d2d", "#293d3d", "#f96305" },
   --   -- Specifices a Linear gradient starting in the top left corner.
   --   orientation = { Linear = { angle = -45.0 } },
   -- }
