@@ -21,11 +21,13 @@ function module.apply_to_config(config)
   private_helper()
 
   -- config.color_scheme = "Catppuccin Mocha"
-  config.font_size = 13.0
+  config.font_size = 15.0
   -- config.window_decorations = "NONE"
   config.initial_cols = 120
   config.initial_rows = 32
-  config.window_background_image = "/home/support/backdrops/voyage.jpg"
+  local image_path = ".config/nvim/wezterm/backdrops/voyage.jpg"
+  config.window_background_image = wezterm.config_dir .. "/" .. image_path
+  wezterm.log_info(config.window_background_image)
   config.window_background_image_hsb = {
     brightness = 0.1,
     hue = 1.0,
