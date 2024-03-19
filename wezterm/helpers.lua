@@ -1,6 +1,6 @@
 -- I am helpers.lua and I should live in ~/.config/wezterm/helpers.lua
 
-local wezterm = require 'wezterm'
+local wezterm = require "wezterm"
 
 -- This is the module table that we will export
 local module = {}
@@ -8,7 +8,7 @@ local module = {}
 -- This function is private to this module and is not visible
 -- outside.
 local function private_helper()
-  wezterm.log_error 'hello!'
+  wezterm.log_error "test log error"
 end
 
 -- define a function in the module table.
@@ -20,13 +20,24 @@ end
 function module.apply_to_config(config)
   private_helper()
 
-  config.color_scheme = 'Catppuccin Mocha'
+  -- config.color_scheme = "Catppuccin Mocha"
   config.font_size = 13.0
   -- config.window_decorations = "NONE"
   config.initial_cols = 120
   config.initial_rows = 32
+  config.window_background_image = "/home/support/backdrops/voyage.jpg"
+  config.window_background_image_hsb = {
+    brightness = 0.1,
+    hue = 1.0,
+    saturation = 1.0,
+  }
+  config.window_background_opacity = 0.99
+  -- config.window_background_gradient = {
+  --   colors = { "#339966", "#990099" },
+  --   -- Specifices a Linear gradient starting in the top left corner.
+  --   orientation = { Linear = { angle = -45.0 } },
+  -- }
 end
 
 -- return our module table
 return module
-
