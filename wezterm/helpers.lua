@@ -25,13 +25,14 @@ function module.apply_to_config(config)
   -- config.window_decorations = "NONE"
   config.initial_cols = 120
   config.initial_rows = 32
-  local image_path = ".config/nvim/wezterm/backdrops/voyage.jpg"
+  -- local image_path = ".config/nvim/wezterm/backdrops/pexels-fox-1172675.jpg"
+  local image_path = ".config/nvim/wezterm/backdrops/pexels-fox-1172675.jpg"
   config.window_background_image = wezterm.config_dir .. "/" .. image_path
-  wezterm.log_info(config.window_background_image)
+  config.window_background_opacity = 0.99
   config.window_background_image_hsb = {
-    brightness = 0.1,
-    hue = 1.0,
-    saturation = 1.0,
+    brightness = 0.09,
+    hue = 1,
+    saturation = 1,
   }
   -- config.text_background_opacity = 1
   -- config.window_background_opacity = 0.9

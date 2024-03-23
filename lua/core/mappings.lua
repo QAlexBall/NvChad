@@ -456,7 +456,12 @@ M.gitsigns = {
       end,
       "Blame line",
     },
-
+    ["<leader>tclb"] = {
+      function()
+        require("gitsigns").toggle_current_line_blame()
+      end,
+      "Toggle Current Line Blame",
+    },
     ["<leader>td"] = {
       function()
         require("gitsigns").toggle_deleted()
