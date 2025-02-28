@@ -261,7 +261,8 @@ M.nvimtree = {
     ["<C-n>"] = { "<cmd> NvimTreeToggle <CR>", "Toggle nvimtree" },
 
     -- focus
-    ["<leader>e"] = { "<cmd> NvimTreeFocus <CR>", "Focus nvimtree" },
+    ["<leader>ee"] = { "<cmd> NvimTreeFocus <CR>", "Focus nvimtree" },
+    ["<leader>ec"] = { "<cmd> NvimTreeClose <CR>", "Focus nvimtree" },
   },
 }
 
@@ -455,7 +456,12 @@ M.gitsigns = {
       end,
       "Blame line",
     },
-
+    ["<leader>tclb"] = {
+      function()
+        require("gitsigns").toggle_current_line_blame()
+      end,
+      "Toggle Current Line Blame",
+    },
     ["<leader>td"] = {
       function()
         require("gitsigns").toggle_deleted()
