@@ -29,6 +29,7 @@ function module.apply_to_config(config)
   local image_path = ".config/nvim/wezterm/backdrops/pexels-fox-1172675.jpg"
   config.window_background_image = wezterm.config_dir .. "/" .. image_path
   config.window_background_opacity = 0.99
+  config.window_decorations = "NONE"
   config.window_background_image_hsb = {
     brightness = 0.09,
     hue = 1,
