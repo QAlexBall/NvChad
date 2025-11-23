@@ -1,8 +1,8 @@
 local wezterm = require "wezterm"
-local platform = require "utils.platform" ()
+local platform = require "utils.platform"()
 -- local colors = require "colors.custom"
 --
-wezterm.log_info("init backdrops")
+wezterm.log_info "init backdrops"
 
 -- Seeding random numbers before generating for use
 -- Known issue with lua math library
